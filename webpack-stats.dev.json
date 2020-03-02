@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"status":"done","publicPath":"http://localhost:3000/","chunks":{"main":[{"name":"static/js/bundle.js","publicPath":"http://localhost:3000/static/js/bundle.js","path":"/mnt/c/Users/rober/Code/ReactPython/blogSite/assets/bundles/static/js/bundle.js"},{"name":"static/js/bundle.js.map","publicPath":"http://localhost:3000/static/js/bundle.js.map","path":"/mnt/c/Users/rober/Code/ReactPython/blogSite/assets/bundles/static/js/bundle.js.map"}]}}
+=======
+{"status":"done","publicPath":"http://localhost:3000/","chunks":{"main":[{"name":"static/js/bundle.js","publicPath":"http://localhost:3000/static/js/bundle.js","path":"/mnt/c/Users/rober/Code/ReactPython/blogSite/frontend/build/static/js/bundle.js"},{"name":"static/js/bundle.js.map","publicPath":"http://localhost:3000/static/js/bundle.js.map","path":"/mnt/c/Users/rober/Code/ReactPython/blogSite/frontend/build/static/js/bundle.js.map"}]}}
+>>>>>>> same as last commit, it just didn't work, end of part 1 revert
