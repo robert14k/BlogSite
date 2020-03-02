@@ -1,29 +1,19 @@
-import React, { Component } from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
-
-import BlogPost from "./components/BlogPost";
-import LandingPage from "./components/LandingPage";
-import NotFound from "./components/NotFound";
-
-import { Provider } from "react-redux";
-import { createStore } from "redux";
-import blogApp from "../reducers";
-
-let store = createStore(blogApp);
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <BrowserRouter>
-          <Switch>
-            Hello
-            <Route exact path="/" component={LandingPage} />
-            <Route path="/Blog" component={BlogPost} />
-            <Route component={NotFound} />
-          </Switch>
-        </BrowserRouter>
-      </Provider>
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to My Janky Blogsite!</h2>
+        </div>
+        <p className="App-intro">
+          A Dope ass react app with a shoty backend in django with a rest api connection
+        </p>
+      </div>
     );
   }
 }
