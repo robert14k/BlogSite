@@ -10,10 +10,10 @@ export const addPost = (postContent, author, postTitle) => {
 export const updatePost = (id, postContent, author, postTitle) => {
   return {
     type: "UPDATE_POST",
+    id,
     postContent,
     author,
     postTitle,
-    id,
   };
 };
 

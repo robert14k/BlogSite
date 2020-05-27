@@ -27,12 +27,13 @@ class BlogPost extends Component {
   };
 
   selectForEdit = id => {
-    let post = this.props.post[id];
+    let post = this.props.posts[id];
     this.setState({
       postContent: post.postContent,
       author: post.author,
       postTitle: post.postTitle,
-      updatePostId: id
+      updatePostId: id,
+      displayAddPost: true,
     });
   };
 
@@ -100,7 +101,7 @@ class BlogPost extends Component {
               />
               <Form.Item>
                 <Button htmlType="submit" type="primary" style={{ margin: 5 }}>
-                  Add
+                  {this.state.updatePostId == null ? "Add" : "Update"}
                 </Button>
               </Form.Item>
               <Button danger style={{ margin: 5 }} onClick={this.resetForm}>
@@ -118,7 +119,7 @@ class BlogPost extends Component {
               title={post.postTitle}
               style={{ margin: "auto", width: "90vw" }}
             >
-              <div dangerouslySetInnerHTML={{__html: post.postContent}}></div>
+              <div dangerouslySetInnerHTML={{ __html: post.postContent }}></div>
 
               <h5>By: {post.author}</h5>
               <Button
